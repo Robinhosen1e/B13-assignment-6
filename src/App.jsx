@@ -1,12 +1,16 @@
 
 import './App.css'
+import Banner from './component/banner/Banner'
+import Nevber from './component/nevber/Nevber'
+import './component/font/icons';
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-amber-400'>Hi World</h1>
+      <Nevber></Nevber>
+      <Banner></Banner>
     </>
   )
 }
