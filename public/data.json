@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Pro",
+    "description": "Create professional, ATS-optimized resumes in minutes with AI assistance",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ modern templates",
+      "ATS optimization score",
+      "AI content suggestions",
+      "Export to PDF & Word",
+      "Cover letter builder"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "Lifetime Access",
+    "description": "One-time payment for unlimited lifetime access + all future updates",
+    "price": 99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "best seller",
+    "features": [
+      "Everything forever",
+      "All current & future features",
+      "Priority support forever",
+      "Team sharing (up to 3 members)",
+      "No recurring charges"
+    ],
+    "icon": "♾️"
+  },
+  {
+    "id": 3,
+    "name": "Resume Monthly",
+    "description": "Unlimited resumes and updates every month with priority support",
+    "price": 9,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Unlimited resume edits",
+      "All templates & designs",
+      "Priority AI assistance",
+      "Monthly new templates",
+      "24/7 email support"
+    ],
+    "icon": "🔄"
+  },
+  {
+    "id": 4,
+    "name": "Executive Suite",
+    "description": "For senior professionals and C-level executives",
+    "price": 79,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "popular",
+    "features": [
+      "Executive-level templates",
+      "Industry-specific keywords",
+      "Personal branding analysis",
+      "Multiple resume versions",
+      "1:1 AI career coaching session"
+    ],
+    "icon": "👔"
+  },
+  {
+    "id": 5,
+    "name": "AI Resume Writer",
+    "description": "Fully AI-powered resume creation from just your LinkedIn or basic info",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Zero to resume in 60 seconds",
+      "Smart content generation",
+      "Multiple tone options",
+      "Real-time ATS scoring",
+      "Instant PDF download"
+    ],
+    "icon": "🤖"
+  },
+  {
+    "id": 2,
+    "name": "Career Booster",
+    "description": "Complete career toolkit with resume, cover letter, and LinkedIn optimization",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "popular",
+    "features": [
+      "Everything in Resume Pro",
+      "AI Cover Letter Generator",
+      "LinkedIn Profile Optimization",
+      "Interview preparation guide",
+      "Job application tracker"
+    ],
+    "icon": "🚀"
+  }
+]
