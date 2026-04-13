@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Feature from './feature';
+import { toast } from 'react-toastify';
 // import { use } from 'react';
 
-const CartInfo = ({carts}) => {
+const CartInfo = ({carts , selectedCart , setSelectedCart}) => {
+
+    const [isSelected , setIsSelected] = useState(false)
+    const handle = () => {
+  toast(`${carts.name} is Selected`);
+  setIsSelected(true);
+
+   setSelectedCart([...selectedCart , carts]);
+};
     const { 
     icon, 
     tag, 
@@ -16,9 +25,9 @@ const CartInfo = ({carts}) => {
     // console.log(carts);
     return (
         <div className='p-6 inset-shadow-2xs border border-gray-300 rounded-2xl'>
-            <div className='flex justify-between items-center pt-6 mb-5'>
+            <div className='flex justify-between items-center mb-5'>
                 <div>
-                    <span className=' mt-7 px-2 py-2.5 rounded-full border-2 border-gray-200'>{icon}</span>
+                    <img className=' mt-7 p-3 rounded-full border-2 border-gray-200' src={icon} alt="" />
                 </div>
 
                 <p className={`${tag === 'Best Seller' ? 
@@ -40,7 +49,8 @@ const CartInfo = ({carts}) => {
                 }
             </div>
             <div>
-                <button className='btn w-full text-[16px] font-bold text-white rounded-3xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>Buy Now </button>
+                <button onClick={handle}  className='btn py-7 w-full text-[16px] font-bold text-white rounded-3xl 
+                bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>{isSelected === true ? 'Added to card ' : 'Buy Now'}</button>
             </div>
         </div>
     );

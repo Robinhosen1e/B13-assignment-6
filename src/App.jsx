@@ -6,6 +6,8 @@ import './component/font/icons';
 import Counter from './component/counter/Counter';
 import Cart from './component/cart/Cart';
 import { Suspense } from 'react';
+import { ToastContainer } from 'react-toastify';
+
 
 
 const fetchCart = async() => {
@@ -25,6 +27,8 @@ function App() {
       <Suspense fallback={<span className='font-medium text-3xl text-center'> Data is loading</span>}>
       <Cart CartPromises={CartPromises}></Cart>
       </Suspense>
+
+      <ToastContainer />
     </>
   )
 }
