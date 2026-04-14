@@ -9,6 +9,7 @@ import { Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import GrideAccountCreate from './component/gide line container/GrideAccountCreate';
 import Pricing from './component/Pricing Section/Pricing';
+import Footer from './component/footer/footer';
 
 
 
@@ -35,6 +36,9 @@ function App() {
 </Suspense>
 
        <Pricing></Pricing>
+
+       <Footer></Footer>
+
       <ToastContainer />
     </>
   )
