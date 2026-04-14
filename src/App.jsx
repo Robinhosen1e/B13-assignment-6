@@ -5,7 +5,7 @@ import Nevber from './component/nevber/Nevber'
 import './component/font/icons';
 import Counter from './component/counter/Counter';
 import Cart from './component/cart/Cart';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import GrideAccountCreate from './component/gide line container/GrideAccountCreate';
 import Pricing from './component/Pricing Section/Pricing';
@@ -17,9 +17,11 @@ const fetchCart = async() => {
 const res = await fetch('../public/data.json');
 return res.json() ;}
 
+
 function App() {
 
   const CartPromises = fetchCart();
+   const [selectedCart , setSelectedCart] = useState([]);
 
   return (
     <>
@@ -28,12 +30,12 @@ function App() {
       <Counter></Counter>
 
       <Suspense fallback={<span className='font-medium text-3xl text-center'> Data is loading</span>}>
-      <Cart CartPromises={CartPromises}></Cart>
+       <Cart CartPromises={CartPromises} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></Cart>
       </Suspense>
 
-<Suspense fallback={<span className='font-medium text-3xl text-center block'>Account data is loading...</span>}>
+
   <GrideAccountCreate />
-</Suspense>
+
 
        <Pricing></Pricing>
 

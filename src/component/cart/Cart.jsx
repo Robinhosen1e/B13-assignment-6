@@ -4,7 +4,7 @@ import CartInfo from './CartInfo';
 import { useState } from 'react';
 import Cartes from '../Cart (2)/Cartes';
 
-const Cart = ({CartPromises}) => {
+const Cart = ({CartPromises , setSelectedCart , selectedCart}) => {
 
     const [isProducts , setNonProducts] = useState('Products');
 
@@ -13,7 +13,7 @@ const Cart = ({CartPromises}) => {
     const cartData = use(CartPromises);
     console.log(cartData);
 
-    const [selectedCart , setSelectedCart] = useState([]);
+   
     return (
         <div className='w-11/12 mx-auto'>
             <div className='w-7/12 mx-auto text-center items-center justify-center'>
@@ -32,7 +32,7 @@ const Cart = ({CartPromises}) => {
                 </div>
             </div>
             {
-                isProducts === 'Products' ? <div className='grid grid-cols-3 gap-11 w-10/12 mx-auto mb-32'>
+                isProducts === 'Products' ? <div className='grid grid-cols-1 lg:grid-cols-3 gap-11 w-10/12 mx-auto mb-32'>
                 {
                      cartData.map(carts => <CartInfo key={carts.id} carts={carts} setSelectedCart={setSelectedCart} selectedCart={selectedCart} setNonProducts={setNonProducts} ></CartInfo>) 
                      

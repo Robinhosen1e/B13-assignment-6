@@ -9,8 +9,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div className='bg-[#101727] text-white '>
-            <div className='w-10/12 mx-auto grid grid-cols-3 gap-4 justify-between py-30'>
-                <div> 
+            <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 justify-between py-30 space-y-10'>
+                <div className='sm:text-left lg:text-center'> 
                     <h1 className='text-4xl font-bold mb-2 '>DigiTools</h1>
                     <p className='text-xs text-[#ffffffc4]'>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
                 </div>
