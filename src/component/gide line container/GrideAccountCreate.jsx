@@ -5,10 +5,10 @@ import Img3 from '../assets/rocket.png'
 
 const GrideAccountCreate = () => {
     return (
-        <div className='py-36 bg-[#d7dae03f]'>
+        <div className='py-36 bg-[#d7dae03f] mb-30'>
             <div className='text-center'>
-                <h1 className='font-bold text-4xl mb-3'>Get Started in 3 Steps</h1>
-                <p className='text-[12px] text-[#627382]  font-light'>Start using premium digital tools in minutes, not hours.</p>
+                <h1 className='font-bold text-5xl mb-3'>Get Started in 3 Steps</h1>
+                <p className=' text-[#627382]  font-light mb-12'>Start using premium digital tools in minutes, not hours.</p>
             </div>
             <div className='grid grid-cols-3 gap-5 w-10/12 mx-auto'>
                 <div className='px-5 pt-5 pb-12 bg-white text-center items-center justify-items-center mr-4 rounded-2xl'>

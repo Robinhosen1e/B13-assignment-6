@@ -8,6 +8,7 @@ import Cart from './component/cart/Cart';
 import { Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import GrideAccountCreate from './component/gide line container/GrideAccountCreate';
+import Pricing from './component/Pricing Section/Pricing';
 
 
 
@@ -32,6 +33,8 @@ function App() {
 <Suspense fallback={<span className='font-medium text-3xl text-center block'>Account data is loading...</span>}>
   <GrideAccountCreate />
 </Suspense>
+
+       <Pricing></Pricing>
       <ToastContainer />
     </>
   )
