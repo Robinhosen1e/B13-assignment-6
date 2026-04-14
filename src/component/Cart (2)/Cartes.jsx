@@ -27,7 +27,7 @@ const total = selectedCart.reduce((sum, item) => {
 
                  {
                     selectedCart.map((selects , index) => {
-                    return <div key={index} className='flex justify-between items-center gap-6 py-4 px-4 rounded-2xl mb-3 bg-[#e9ecf1e0]'>
+                    return <div key={index} className='flex justify-between items-center gap-6 py-4 px-4 rounded-2xl mb-3 bg-[#f8f8f8dc]'>
                         <div className='flex items-center gap-4'>
                             <img className='py-3 px-3 rounded-4xl bg-white ' src={selects.icon} alt="" />
                             <div>
@@ -50,7 +50,7 @@ const total = selectedCart.reduce((sum, item) => {
                  <button 
                  onClick={() => {
     if (selectedCart.length > 0) {
-      toast.success("Thank you! Your order has been placed successfully. 🛍️"); 
+      toast.success("Thank you! Your order has been placed successfully."); 
 
       setSelectedCart([]); 
     }

@@ -49,8 +49,9 @@ const CartInfo = ({carts , selectedCart , setSelectedCart}) => {
                 }
             </div>
             <div>
-                <button onClick={handle}  className='btn py-7 w-full text-[16px] font-bold text-white rounded-3xl 
-                bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>{isSelected === true ? 'Added to card ' : 'Buy Now'}</button>
+                <button onClick={handle}  className={`btn ${isSelected === true ?  `py-6 w-full text-[16px] font-normal text-white rounded-3xl 
+                bg-green-600` : `py-6 w-full text-[16px] font-normal text-white rounded-3xl 
+                bg-gradient-to-r from-[#4F39F6] to-[#9514FA]`}`}>{isSelected === true ? 'Added to card ' : 'Buy Now'}</button>
             </div>
         </div>
     );

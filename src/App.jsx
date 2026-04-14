@@ -7,6 +7,7 @@ import Counter from './component/counter/Counter';
 import Cart from './component/cart/Cart';
 import { Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
+import GrideAccountCreate from './component/gide line container/GrideAccountCreate';
 
 
 
@@ -28,6 +29,9 @@ function App() {
       <Cart CartPromises={CartPromises}></Cart>
       </Suspense>
 
+<Suspense fallback={<span className='font-medium text-3xl text-center block'>Account data is loading...</span>}>
+  <GrideAccountCreate />
+</Suspense>
       <ToastContainer />
     </>
   )
