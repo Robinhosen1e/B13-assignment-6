@@ -1,12 +1,11 @@
 import React from 'react';
 import { use } from 'react';
 import CartInfo from './CartInfo';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Cartes from '../Cart (2)/Cartes';
 
-const Cart = ({CartPromises , setSelectedCart , selectedCart}) => {
+const Cart = ({CartPromises , setSelectedCart , selectedCart , isProducts , setNonProducts}) => {
 
-    const [isProducts , setNonProducts] = useState('Products');
 
     console.log(isProducts , setNonProducts);
 
@@ -26,7 +25,7 @@ const Cart = ({CartPromises , setSelectedCart , selectedCart}) => {
                     <button onClick={() => setNonProducts('Products')} className={`btn px-[16px] font-normal ${isProducts === 'Products' ?
                          "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-white text-blue-600"} 
                          font-bold btn border-none rounded-3xl mr-4 `}>Products</button>
-                    <button onClick={() => setNonProducts('seclected')} className={`btn font-normal ${isProducts === 'seclected' ?
+                    <button onClick={() => setNonProducts('cart')} className={`btn font-normal ${isProducts === 'cart' ?
                          "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-white text-blue-600"} 
                          font-bold btn border-none rounded-3xl `}>Cart ({selectedCart.length})</button>
                 </div>
@@ -34,7 +33,7 @@ const Cart = ({CartPromises , setSelectedCart , selectedCart}) => {
             {
                 isProducts === 'Products' ? <div className='grid grid-cols-1 lg:grid-cols-3 gap-11 w-10/12 mx-auto mb-32'>
                 {
-                     cartData.map(carts => <CartInfo key={carts.id} carts={carts} setSelectedCart={setSelectedCart} selectedCart={selectedCart} setNonProducts={setNonProducts} ></CartInfo>) 
+                     cartData.map(carts => <CartInfo key={carts.id} carts={carts} setSelectedCart={setSelectedCart} selectedCart={selectedCart} ></CartInfo>) 
                      
                 }
             </div> : <div> <Cartes selectedCart={selectedCart} setSelectedCart={setSelectedCart} cartData={cartData} ></Cartes> </div>

@@ -8,7 +8,7 @@ const Pricing = () => {
                 <h1 className='text-5xl font-bold mb-3.5'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 w-8/12 mx-auto mb-40 '>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 w-8/12 mx-auto mb-40 space-y-8'>
                 <div className='bg-[#F9FAFC] p-8 rounded-2xl border border-[#e2e2e2]'>
                     <div>
                         <h1 className='font-bold  text-3xl'>Starter</h1>
@@ -25,7 +25,7 @@ const Pricing = () => {
                         <p className='font-normal items-center flex gap-1.5'> <Check size={20} color="#44ff00" /> 1 project per month</p>
                     </div>
                     <div className='relative'>
-                        <button className=' absolute mt-18 w-full text-[16px] font-normal text-white rounded-3xl 
+                        <button className=' absolute mt-1 lg:mt-18 w-full text-[16px] font-normal text-white rounded-3xl 
                              bg-gradient-to-r from-[#4F39F6] to-[#9514FA] btn'>Get Started Free</button>
                 </div>
                 </div>

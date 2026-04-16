@@ -21,16 +21,19 @@ return res.json() ;}
 function App() {
 
   const CartPromises = fetchCart();
-   const [selectedCart , setSelectedCart] = useState([]);
+
+    const [isProducts , setNonProducts] = useState('Products')
+    const [selectedCart , setSelectedCart] = useState([])
 
   return (
     <>
-      <Nevber></Nevber>
+      <Nevber selectedCart={selectedCart}></Nevber>
       <Banner></Banner>
       <Counter></Counter>
 
       <Suspense fallback={<span className='font-medium text-3xl text-center'> Data is loading</span>}>
-       <Cart CartPromises={CartPromises} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></Cart>
+       <Cart CartPromises={CartPromises} selectedCart={selectedCart}
+        setSelectedCart={setSelectedCart} isProducts={isProducts} setNonProducts={setNonProducts}></Cart>
       </Suspense>
 
 

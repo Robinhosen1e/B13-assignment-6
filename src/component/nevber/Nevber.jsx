@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, ShoppingCartIcon, X } from 'lucide-react';
 
-const Nevber = () => {
+const Nevber = ({selectedCart}) => {
     return (
   <div className='relative'>
           <div className="navbar bg-base-100 shadow-sm py-5 px-8 sticky top-0 ">
@@ -34,7 +34,7 @@ const Nevber = () => {
   <div className="navbar-end">
     <div className='relative'>
        
-        <h1 className='absolute ml-10 -mt-2 bg-[#4F39F6] px-2  rounded-full text-white'>0</h1>
+        <h1 className='absolute ml-10 -mt-2 bg-[#4F39F6] px-2  rounded-full text-white'>{selectedCart.length}</h1>
         <div className='btn rounded-full p-4'><ShoppingCartIcon /> </div>
     </div>
     <a className=" cursor-pointer  ml-5">Login</a>

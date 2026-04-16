@@ -6,7 +6,9 @@ import { toast } from 'react-toastify';
 const CartInfo = ({carts , selectedCart , setSelectedCart}) => {
 
     const [isSelected , setIsSelected] = useState(false)
+
     const handle = () => {
+
   toast(`${carts.name} is Selected`);
   setIsSelected(true);
 
@@ -49,9 +51,9 @@ const CartInfo = ({carts , selectedCart , setSelectedCart}) => {
                 }
             </div>
             <div>
-                <button onClick={handle}  className={`btn ${isSelected === true ?  `py-6 w-full text-[16px] font-normal text-white rounded-3xl 
+                <button type='button' onClick={handle}  className={`btn ${isSelected === true ?  `py-6 w-full text-[16px] font-normal text-white rounded-3xl 
                 bg-green-600` : `py-6 w-full text-[16px] font-normal text-white rounded-3xl 
-                bg-gradient-to-r from-[#4F39F6] to-[#9514FA]`}`}>{isSelected === true ? 'Added to card ' : 'Buy Now'}</button>
+                bg-gradient-to-r from-[#4F39F6] to-[#9514FA]`}`}>{isSelected === true ? 'Added to card ✓ ' : 'Buy Now'}</button>
             </div>
         </div>
     );

@@ -18,8 +18,8 @@ const total = selectedCart.reduce((sum, item) => {
     return (
          <div>
             { selectedCart.length === 0 ?
-            <div className=' p-52 border-2 mb-20 border-gray-300 rounded-2xl flex  text-center justify-center items-center gap-3 flex-col' >
-                <h2 className='font-bold text-4xl text-gray-600'>No Player Select Yet</h2>
+            <div className=' p-24 lg:p-52 border-2 mb-20 border-gray-300 rounded-2xl flex  text-center justify-center items-center gap-3 flex-col' >
+                <h2 className='font-bold text-4xl text-gray-600 text-nowrap'>No Player Select Yet</h2>
                 <p className=' text-gray-400 '>Go to Available tap to select player</p>
             </div>
                : <div className=' border-2 mb-20 border-gray-300 p-10 rounded-2xl  justify-center items-center'>
