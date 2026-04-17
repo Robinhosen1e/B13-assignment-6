@@ -2,7 +2,7 @@ import React from 'react';
 import { use } from 'react';
 import CartInfo from './CartInfo';
 // import { useState } from 'react';
-import Cartes from '../Cart (2)/Cartes';
+import Cartes from '../Cart-(2)/Cartes';
 
 const Cart = ({CartPromises , setSelectedCart , selectedCart , isProducts , setNonProducts}) => {
 

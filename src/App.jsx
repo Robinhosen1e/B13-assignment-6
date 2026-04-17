@@ -7,14 +7,14 @@ import Counter from './component/counter/Counter';
 import Cart from './component/cart/Cart';
 import { Suspense, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
-import GrideAccountCreate from './component/gide line container/GrideAccountCreate';
-import Pricing from './component/Pricing Section/Pricing';
+import GrideAccountCreate from './component/gide-line-container/GrideAccountCreate';
+import Pricing from './component/Pricing-Section/Pricing';
 import Footer from './component/footer/footer';
 
 
 
 const fetchCart = async() => {
-const res = await fetch('../public/data.json');
+const res = await fetch('/public/data.json');
 return res.json() ;}
 
 
