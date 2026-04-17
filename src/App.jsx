@@ -14,7 +14,7 @@ import Footer from './component/footer/footer';
 
 
 const fetchCart = async() => {
-const res = await fetch('/public/data.json');
+const res = await fetch('data.json');
 return res.json() ;}
 
 

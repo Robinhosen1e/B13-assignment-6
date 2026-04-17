@@ -1,22 +1,14 @@
-# React + Vite
+DigiTools
+A digital tools buying website where you can browse and buy premium digital products like AI tools, design assets, and templates.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-npm install --save @fortawesome/react-fontawesome@latest
-npm install --save @fortawesome/fontawesome-svg-core
-npm install --save @fortawesome/free-solid-svg-icons
-npm install --save @fortawesome/free-regular-svg-icons
-npm install --save @fortawesome/free-brands-svg-icons
+Built With
+React.js
+Tailwind CSS
+DaisyUI
+React-Toastify
+Features
+Browse 6 premium digital products and add them to cart
+Cart shows selected items with total price and remove option
+Toast notifications for add to cart, remove, and checkout actions
+Live Site
+Digitools
