@@ -1,4 +1,4 @@
-import { Circle, Disc } from 'lucide-react';
+import { Circle, Disc, Play } from 'lucide-react';
 import bannerImg from '../assets/banner.png'
 import React from 'react';
 
@@ -15,7 +15,7 @@ const Banner = () => {
                 <p className='text-[#627382] text-[18px] font-[100] leading-8 mb-9'>Access premium AI tools, design assets, templates, and productivity <br /> software—all in one place. Start creating faster today. <br /> Explore Products</p>
                 <div className='gap-8'>
                     <button className='cursor-pointer btn  rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white font-normal text-[16px] py-[25px] mr-6'>Explore Products</button>
-                    <button className=' bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent border-[#4F39F6]  cursor-pointer btn  rounded-full font-semibold text-[16px] py-[25px] border'>Watch Demo</button>
+                    <button className=' bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent border-[#4F39F6]  cursor-pointer btn  rounded-full font-semibold text-[16px] py-[25px] border'> <Play size={18} color='#4F39F6' /> Watch Demo</button>
                 </div>
             </div>
             <div>

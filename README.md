@@ -18,4 +18,4 @@ DigiTools is a modern e-commerce platform for digital products where users can e
 - Smooth toast notifications for add, remove, and checkout actions
 
 ## Live Site
-[Visit DigiTools](https://digitools-b13-ass.netlify.app/)
+[Visit DigiTools](https://digi-robin.netlify.app/)
